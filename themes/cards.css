@@ -1,0 +1,157 @@
+/*Reset*/
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+* { 
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+
+/*Main*/
+/*replace with this import below*/
+/*@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500,700);*/
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/vRvZYZlUaogOuHbBTT1SNevvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/0ihfXUL2emPh0ROJezvraLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/OsJ2DjdpjqFRVUSto6IffLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+strong{
+	font-weight: 700;
+	color: #222;
+}
+html{
+	background-color: #e4e9ea;
+	/*border-top: 5px solid #6CDCD2;*/
+}
+body{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+}
+body a{
+	color:#67dcd2;
+}
+p+p{
+	margin-top: 1em;
+}
+body a:hover{
+	color: #9067dc;
+}
+#portrait img{
+	clear:both;
+	display: block;
+	margin: 0 auto;
+	border-radius: 3px;
+    box-shadow:   0px 1px 0px rgba(0, 0, 0, 0.125);
+}
+header{
+	width: 350px;
+	background-color: #9067DC;
+	color: #ffffff;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding: 20px;
+	margin: 0 auto;
+	color: #777777;
+	border-top: 2px solid rgba (0,0,0,0,0.9);
+	font-size: 14px;
+	-webkit-box-shadow:   0px 1px 0px rgba(0, 0, 0, 0.125);    
+    box-shadow:   0px 1px 0px rgba(0, 0, 0, 0.125);
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header p+p{
+	margin-top: 5px;
+}
+header strong{
+	color:rgba(0, 0, 0, 0.5); 
+}
+header a{
+	color:rgba(255, 255, 255, 0.6);
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+}
+header a:hover{ 
+	color:#67dcd2;
+	border-bottom: 0;
+}
+header p{
+	color: #ffffff;
+	/*text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.125);*/
+}
+#portrait + p{
+	padding-top: 10px;
+}
+
+#posts{
+	width: 500px;
+	margin: 0 auto;
+	/*padding-top: 20px;*/
+	margin-bottom: 20px;
+	position: relative;
+}
+#posts article{
+	margin-bottom: 80px;
+	width: 500px;
+	clear: both;
+}
+#posts article section{
+	background-color: white;
+	border-radius: 5px;
+	-webkit-box-shadow:   0px 1px 0px rgba(0, 0, 0, 0.125);    
+    box-shadow:   0px 1px 0px rgba(0, 0, 0, 0.125);
+    color: #777777;
+    line-height: 125%;
+	min-height: 40px;
+	clear:both;
+}
+article .permalink{
+	background-color: #fff;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	border-top: 1px solid #ccc;
+	/*display: block;*/
+	font-size: 12px;
+	/*width: 150px;*/
+	color: #8f8f8f;
+	text-align: center;
+	right: 10px;
+	bottom: -25px;
+	position: absolute;
+	height: 25px;
+	padding-top: 10px;
+	padding: 5px 15px;
+	box-shadow:   0px 1px 0px rgba(0, 0, 0, 0.125);
+}
+article .permalink a{
+		color: #8f8f8f;
+		text-decoration: none;
+}
+#posts article.textPost section{
+	padding: 25px;
+	font-size: 14px;
+	line-height: 18px;	
+} 
+#posts article .photo{
+	border-radius: 5px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+#posts article .caption{
+	padding: 25px;
+	margin-bottom: 40px;
+}
