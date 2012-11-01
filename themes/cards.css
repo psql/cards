@@ -41,14 +41,20 @@ body{
 	font-size: 14px;
 }
 body a{
+	color: #9067DC;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+body a:hover{
 	color:#67dcd2;
 }
 p+p{
 	margin-top: 1em;
 }
-body a:hover{
-	color: #9067dc;
-}
+
 #portrait img{
 	clear:both;
 	display: block;
@@ -134,12 +140,23 @@ article .permalink{
 	position: absolute;
 	height: 25px;
 	padding-top: 10px;
-	padding: 5px 15px;
+	padding: 5px 0;
 	box-shadow:   0px 1px 0px rgba(0, 0, 0, 0.125);
+	-webkit-transition: all 0.125s ease-in;
 }
+article .permalink:hover{
+	height: 30px;
+	bottom: -30px;
+	padding-top: 10px;	
+}
+article .permalink:hover a{
+	color: #333;
+}
+
 article .permalink a{
 		color: #8f8f8f;
 		text-decoration: none;
+		padding: 10px;
 }
 #posts article.textPost section{
 	padding: 25px;
@@ -154,4 +171,34 @@ article .permalink a{
 #posts article .caption{
 	padding: 25px;
 	margin-bottom: 40px;
+}
+
+.textPost h2{
+	font-weight: bold;
+	color: #333333;
+	text-align: center;
+	margin-bottom: 15px;
+	font-size: 18px;
+}
+
+.textPost ul{
+	list-style-type: square;
+	margin-left: 20px;
+	margin: 15px 0;
+}
+.textPost ul li{
+	padding-bottom: 10px;
+}
+.textPost .copy{
+	padding-bottom: 15px;
+}
+.textPost .copy p:last-child{
+	padding-bottom: 20px;
+}
+blockquote{
+	border-left: 2px solid #E4E9EA;
+	padding-left: 25px;
+	margin: 20px 0;
+	/*border-radius: 3px;*/
+
 }

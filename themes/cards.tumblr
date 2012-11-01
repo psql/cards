@@ -36,9 +36,10 @@
     {block:Text}
       <article class="textPost">
         <section>
-          {block:Title}<div class="title">{Title}</div>{/block:Title}
+          {block:Title}<h2>{Title}</h2>{/block:Title}
           <div class="copy">{Body}</div>
         </section>
+        
         <!-- <span class="permalink"><a href="{Permalink}">{block:Date}{DayOfMonthWithZero} {ShortMonth}{/block:Date} / {NoteCountWithLabel}</a></span> -->
         <span class="permalink"><a href="{Permalink}"> 01 OCT / 3,674 NOTES</a></span>
       </article> 
